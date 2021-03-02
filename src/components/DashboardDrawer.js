@@ -79,7 +79,7 @@ function DashboardDrawer() {
          </List>
          <Divider />
          <List>
-            {['All mail', 'Trash', 'Spam'].map((text, index) => (
+            {['ASIAKAS A', 'ASIAKAS B', 'ASIAKAS C'].map((text, index) => (
                <ListItem button key={text}>
                   <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                   <ListItemText primary={text} />
@@ -107,9 +107,9 @@ function DashboardDrawer() {
                </IconButton>
              
                <Tabs aria-label="simple tabs example">
-                  <Tab label="Item One" />
-                  <Tab label="Item Two" />
-                  <Tab label="Item Three" />
+                  <Tab label="Asiakkaat" />
+                  <Tab label="Hakemukset" />
+                  <Tab label="Suunnitelma" />
                </Tabs>
                <PersonIcon />
               

@@ -23,12 +23,12 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-   createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-   createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-   createData('Eclair', 262, 16.0, 24, 6.0),
-   createData('Cupcake', 305, 3.7, 67, 4.3),
-   createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
+   createData('Etävastaanotto', '1', '2.3.2021', 'Martti Martti', 'Valmis'),
+   createData('Taivaltie 3', '1', '20.2.2021', 'Martti Martti', 'Jatkuu'),
+   createData('Taivaltie 3', '1', '18.2.2021', 'Martti Martti', 'Jatkuu'),
+   createData('Taivaltie 3', '1', '5.2.2021', 'Martti Martti', 'Jatkuu'),
+   createData('Taivaltie 3', '1', '2.2.2021', 'Martti Martti', 'Jatkuu'),
+]
 
 export default function Content() {
    const classes = useStyles();
@@ -38,11 +38,11 @@ export default function Content() {
          <Table className={classes.table} aria-label="simple table">
             <TableHead>
                <TableRow>
-                  <TableCell>Dessert (100g serving)</TableCell>
-                  <TableCell align="right">Calories</TableCell>
-                  <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                  <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                  <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                  <TableCell>Paikka</TableCell>
+                  <TableCell align="right">Tarkoitus</TableCell>
+                  <TableCell align="right">Pvm</TableCell>
+                  <TableCell align="right">Käsittelijä</TableCell>
+                  <TableCell align="right">Päätös</TableCell>
                </TableRow>
             </TableHead>
             <TableBody>
